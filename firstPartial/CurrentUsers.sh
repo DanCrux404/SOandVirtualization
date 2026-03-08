@@ -18,3 +18,4 @@ while IFS=: read -r USERNAME _ USER_ID GID_NUM GECOS HOME_DIR LOGIN_SHELL; do
     echo "Shell:         $LOGIN_SHELL"
     echo "-----------------------------"
 done < <(getent passwd)
+#getent passwd is where users are being read 
