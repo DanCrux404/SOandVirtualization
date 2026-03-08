@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "============================="
-echo "      Existed users"
+echo "      Existing users"
 echo "============================="
 #Internal Field Separator IFS:= how to separate fields when reading
 #GECOS is a really ancient field that used to save user info
@@ -10,10 +10,10 @@ echo "============================="
 while IFS=: read -r USERNAME _ USER_ID GID_NUM GECOS HOME_DIR LOGIN_SHELL; do
     GECOS=$(echo "$GECOS" | tr -d ',')
     echo ""
-    echo "Usuario:       $USERNAME"
+    echo "User:       $USERNAME"
     echo "UID:           $USER_ID"
     echo "GID:           $GID_NUM"
-    echo "Nombre:        $GECOS"
+    echo "Name:        $GECOS"
     echo "Home:          $HOME_DIR"
     echo "Shell:         $LOGIN_SHELL"
     echo "-----------------------------"
