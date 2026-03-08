@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "============================="
-echo "      Existing users"
+echo "      Existing users         "
 echo "============================="
 #Internal Field Separator IFS:= how to separate fields when reading
 #GECOS is a really ancient field that used to save user info
